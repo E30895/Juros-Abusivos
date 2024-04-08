@@ -19,7 +19,7 @@ try:
     if st.button('Processar'):
         payflow.insert(0, number)
         payflow = [float(valor) for valor in payflow]
-        taxa_contrato = npf.irr(payflow)
+        taxa_contrato = npf.irr(payflow) * 100
         #taxa_contrato = (((1 + taxa_contrato)**12) - 1) * 100
 
         if tipo == "Pessoa Fisica (PF)":
