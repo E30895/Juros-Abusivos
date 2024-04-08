@@ -20,7 +20,7 @@ try:
         payflow.insert(0, number)
         payflow = [float(valor) for valor in payflow]
         taxa_contrato = npf.irr(payflow)
-        taxa_contrato = (((1 + taxa_contrato)**12) - 1) * 100
+        #taxa_contrato = (((1 + taxa_contrato)**12) - 1) * 100
 
         if tipo == "Pessoa Fisica (PF)":
             taxa_mercado = sgs.get({'IPCA': 25435}, start='2023-12-01')
