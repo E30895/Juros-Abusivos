@@ -32,7 +32,7 @@ try:
             taxa_mercado = taxa_mercado['IPCA'].iloc[-1]
             taxa_mercado = (((1+(taxa_mercado/100))**12) - 1) * 100
 
-        st.text(f"Taxa do Contrato: {round(taxa_contrato, 2)} | Taxa Média do Mercado: {taxa_mercado}")
+        st.text(f"Taxa do Contrato: {round(taxa_contrato, 2)} %a.a | Taxa Média do Mercado: {round(taxa_mercado, 2)} %a.a")
 
         if taxa_contrato*100 >= 1.2 * taxa_mercado:
             st.warning("A taxa do seu contrato é considerada potencialmente abusiva.")
