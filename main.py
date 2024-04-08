@@ -4,7 +4,7 @@ import numpy_financial as npf
 import streamlit as st
 from bcb import sgs
 
-st.title('Recalculo Teste')
+st.title('Juros Abusivos - Beta')
 
 tipo = st.radio(
     "Modalidade de Contrato",
