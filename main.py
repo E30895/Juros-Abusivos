@@ -23,12 +23,12 @@ try:
         taxa_contrato = (((1 + taxa_contrato)**12) - 1) * 100
 
         if tipo == "Pessoa Fisica (PF)":
-            taxa_mercado = sgs.get({'IPCA': 25435}, start='2002-02-01')
+            taxa_mercado = sgs.get({'IPCA': 25435}, start='2023-12-01')
             taxa_mercado = taxa_mercado['IPCA'].iloc[-1]
             taxa_mercado = (((1+(taxa_mercado/100))**12) - 1) * 100
 
         elif tipo == "Pessoa Juridica (PJ)":
-            taxa_mercado = sgs.get({'IPCA': 25434}, start='2002-02-01')
+            taxa_mercado = sgs.get({'IPCA': 25434}, start='2023-12-01')
             taxa_mercado = taxa_mercado['IPCA'].iloc[-1]
             taxa_mercado = (((1+(taxa_mercado/100))**12) - 1) * 100
 
