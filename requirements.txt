@@ -1,5 +1,5 @@
 numpy==1.26.1
-pandas==2.1.1
+pandas==1.5.3
 streamlit==1.27.2
 numpy-financial==1.0.0
 python-bcb==0.1.8
